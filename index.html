@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../img/kitty.png">
+
+    <title>Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">My Profile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#submit">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+        </div>
+      </nav>
+    </header>
+
+    <div class="modal fade bd-example-modal-lg" id="submit" tabindex="-1" role="dialog" aria-labelledby="submit" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="about-section">
+                    <div class="col-4 img">
+                        <img  class="profile-picture" src="../img/gallery/myprofile.jpg" alt="">
+                    </div>
+                    <div class="col-8 myinfo">
+                        <div class="col-5" id="bio-title">
+                        <ul>
+                            <li><b>NAME</b></li>
+                            <li><b>D.O.B</b></li>
+                            <li><b>PHONE </b></li>
+                            <li><b>ADDRESS </b></li>
+                            <li><b>E-MAIL </b></li>
+                        </ul>
+                        </div>
+                        <div class="col-7" id="bio-text">
+                            <ul>
+                                <li>Max Phang</li>
+                                <li>05-02-1995</li>
+                                <li>6010-421 3243</li>
+                                <li>Jalan Kuchai Lama</li>
+                                <li>jackiephang9535@gmail.com</li>
+                            </ul>
+                        </div>
+                    
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main role="main">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="../img/photo1.png" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="../img/photo2.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="../img/photo4.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!-- tab section -->
+        <section id="section-tab">
+            <div class="tab">
+              <button class="tablinks" onclick="details(event, 'Album')" id="defaultOpen">Album</button>
+              <button class="tablinks" onclick="details(event, 'MV')">Favourite MV</button>
+              <button class="tablinks" onclick="details(event, 'Books')">Books</button>
+              <!-- <button class="tablinks" onclick="details(event, 'Project')">Project</button> -->
+            </div>
+
+            <div id="Album" class="tabcontent">
+                <img class="photo" src="../img/gallery/photo01.jpeg">
+                <img class="photo" src="../img/gallery/photo02.jpeg">
+                <img class="photo" src="../img/gallery/photo03.jpeg">
+                <img class="photo" src="../img/gallery/photo04.jpeg">
+                <img class="photo" src="../img/gallery/photo05.jpeg">
+                <img class="photo" src="../img/gallery/photo06.jpeg">
+            </div>
+
+            <div id="MV" class="tabcontent">
+              <iframe width="500" height="400" src="https://www.youtube.com/embed/IsXB5eRMRno" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <iframe width="500" height="400" src="https://www.youtube.com/embed/j-4c4T-P2t0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+
+            <div id="Books" class="tabcontent">
+                <table>
+                    <tr>
+                        <th>Book</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="book" src="../img/gallery/harrypotter1.jpg">
+                        </td>
+                        <td>
+                            <h2>Harry Potter</h2>
+                            <p>
+                                Harry Potter is a series of fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, a dark wizard who intends to become immortal, overthrow the wizard governing body known as the Ministry of Magic, and subjugate all wizards and Muggles (non-magical people).
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="book" src="../img/gallery/hungergame.jpg">
+                        </td>
+                        <td>
+                            <h2>The Hunger Games</h2>
+                            <p>
+                                The Hunger Games is a trilogy of young adult dystopian novels written by American novelist Suzanne Collins. The series is set in The Hunger Games universe, and follows young characters Katniss Everdeen and Peeta Mellark.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="book" src="../img/gallery/thelordoftherings.jpg">
+                        </td>
+                        <td>
+                            <h2>The Lord of the Rings</h2>
+                            <p>
+                                The Lord of the Rings is an epic high fantasy novel written by English author and scholar J. R. R. Tolkien. The story began as a sequel to Tolkien's 1937 fantasy novel The Hobbit, but eventually developed into a much larger work. Written in stages between 1937 and 1949, The Lord of the Rings is one of the best-selling novels ever written, with over 150 million copies sold.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- <div id="Project" class="tabcontent"></div> -->
+        </section>
+        <!-- /tab section -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        function details(evt, detail) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(detail).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>
