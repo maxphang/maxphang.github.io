@@ -44,7 +44,8 @@
 			alert('Correct!');
 			reset();
 		} else {
-			alert('Please try again!')
+			alert('Wrong! The correct answer is "' + tag + '"!');
+			reset();
 		} 
 	}
 
