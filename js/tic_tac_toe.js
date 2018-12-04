@@ -65,7 +65,7 @@
 			return true
 		} else if (document.getElementsByClassName('box')[3].innerHTML == document.getElementsByClassName('box')[4].innerHTML && document.getElementsByClassName('box')[4].innerHTML == document.getElementsByClassName('box')[5].innerHTML && document.getElementsByClassName('box')[3].innerHTML != "") {
 			return true
-		} else if (document.getElementsByClassName('box')[6].innerHT == document.getElementsByClassName('box')[7].innerHTML && document.getElementsByClassName('box')[7].innerHTML == document.getElementsByClassName('box')[8].innerHTML && document.getElementsByClassName('box')[6].innerHTML != "") {
+		} else if (document.getElementsByClassName('box')[6].innerHTML == document.getElementsByClassName('box')[7].innerHTML && document.getElementsByClassName('box')[7].innerHTML == document.getElementsByClassName('box')[8].innerHTML && document.getElementsByClassName('box')[6].innerHTML != "") {
 			return true
 		} else if (document.getElementsByClassName('box')[0].innerHTML == document.getElementsByClassName('box')[3].innerHTML && document.getElementsByClassName('box')[3].innerHTML == document.getElementsByClassName('box')[6].innerHTML && document.getElementsByClassName('box')[0].innerHTML != "") {
 			return true
