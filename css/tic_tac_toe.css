@@ -1,0 +1,17 @@
+body {
+	height: 600px;
+	width: 600px;
+}
+
+div {
+	border: 3px solid black;
+	width: 25%;
+	float: left;
+	height: 25%;
+    display: inline-block;
+    text-align: center;
+    font-size: 100px;
+    color: blue;
+    padding: 16px;
+    margin: auto;
+ }
