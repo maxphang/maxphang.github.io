@@ -1,6 +1,7 @@
-body {
+section {
 	height: 600px;
 	width: 600px;
+	padding: 400px;
 }
 
 div {
