@@ -200,6 +200,10 @@ table, th, td {
   margin: 3px;
 }
 
+.col-sm-6 {
+  padding: 0;
+}
+
 #portfolio {
   background-color: black;
 }
