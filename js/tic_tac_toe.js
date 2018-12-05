@@ -1,4 +1,4 @@
-	function fillBox(elem,symbol){
+		function fillBox(elem,symbol){
 		let input = elem;
 		input.innerHTML = symbol;	
 	}
@@ -15,40 +15,6 @@
 	function switchPlayer(){
 		player = !player
 	}
-		
-	let count = 0;
-	let player_1_winCount = 0;
-	let player_2_winCount = 0;
-
-	for(let i = 0; i < 9 ; i++){
-		let player = document.getElementsByClassName('box')[i];
-			player.onclick = function(event){
-				let target = event.target;
-				if (target.innerHTML == '') {
-					if (count < 9){
-						fillBox(event.target, givePlayerSymbol());
-						switchPlayer();
-						count++
-						if (checkWin() == true) {
-							alert('You won');
-						    if(target.innerHTML == 'X') {
-						    	player_1_winCount++;
-						    	document.getElementById('player_1').innerHTML = player_1_winCount;
-						    } else {			
-						    	player_2_winCount++;	    	
-						   		document.getElementById('player_2').innerHTML = player_2_winCount;
-						    }
-								reset();
-						} else if (count == 9) {
-							alert('draw! Again');
-							reset();
-						}
-					}
-				} else {
-					return false
-				}	
-			}
-	}
 	
 	function reset() {
 		for(let i = 0; i < 9; i++){
@@ -57,8 +23,6 @@
 			player = true;
 		}
 	}
-
-	
 
 	function checkWin() {
 		if (document.getElementsByClassName('box')[0].innerHTML == document.getElementsByClassName('box')[1].innerHTML && document.getElementsByClassName('box')[1].innerHTML == document.getElementsByClassName('box')[2].innerHTML && document.getElementsByClassName('box')[0].innerHTML != "") {
@@ -80,4 +44,41 @@
 		} else {
 			return false
 		}
+	}	
+	
+	let count = 0;
+	let player_1_winCount = 0;
+	let player_2_winCount = 0;
+
+	for(let i = 0; i < 9 ; i++){
+		let player = document.getElementsByClassName('box')[i];
+		console.log(player);
+		player.onclick = function(event){
+			let target = event.target;
+			if (target.innerHTML == '') {
+				if (count < 9){
+					fillBox(event.target, givePlayerSymbol());
+					switchPlayer();
+					count++
+					if (checkWin() == true) {
+						alert('You won');
+					    if(target.innerHTML == 'X') {
+					    	player_1_winCount++;
+					    	document.getElementById('player_1').innerHTML = player_1_winCount;
+					    } else {			
+					    	player_2_winCount++;	    	
+					   		document.getElementById('player_2').innerHTML = player_2_winCount;
+					    }
+							reset();
+					} else if (count == 9) {
+						alert('draw! Again');
+						reset();
+					}
+				}
+			} else {
+				return false
+			}	
+		}
 	}
+	
+	
