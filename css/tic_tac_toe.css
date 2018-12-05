@@ -4,14 +4,20 @@ body {
 }
 
 div {
-	border: 3px solid black;
+	border: 3px solid #A15D2D;
 	width: 25%;
 	float: left;
 	height: 25%;
-    display: inline-block;
-    text-align: center;
-    font-size: 100px;
-    color: blue;
-    padding: 16px;
-    margin: auto;
+        display: inline-block;
+        text-align: center;
+        font-size: 100px;
+        color: white;
+        padding: 16px;
+        margin: auto;
+        background-color: #CF793C;
+        line-height: 145px;
+ }
+
+ div:hover {
+  	opacity: 0.7;
  }
