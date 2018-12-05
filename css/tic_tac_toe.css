@@ -20,5 +20,5 @@ div {
  }
 
  div:hover {
-  	opacity: 0.7;
+  	background-image: radial-gradient(circle, #F7E5D7, #F5BD95, #CF793C);
  }
