@@ -1,3 +1,7 @@
+*{
+	background-color: #F0EDFC;
+}
+
 ul li {
 	display: inline-block;
 	margin-right: 8px;
