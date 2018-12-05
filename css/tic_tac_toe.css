@@ -1,24 +1,41 @@
+body {
+	background-image: url('../img/photo2.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 section {
 	height: 600px;
 	width: 600px;
 	padding-left: 400px;
 }
 
+header {
+	font-size: 20px;
+}
+
+header p span {
+	font-weight: bold;
+	color: red;
+	font-size: 24px;
+}
 div {
 	border: 3px solid #A15D2D;
 	width: 25%;
 	float: left;
 	height: 25%;
-        display: inline-block;
-        text-align: center;
-        font-size: 100px;
-        color: white;
-        padding: 16px;
-        margin: auto;
-        background-color: #CF793C;
-        line-height: 145px;
+    display: inline-block;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    padding: 16px;
+    margin: auto;
+    background-color: #CF793C;
+    line-height: 145px;
  }
 
  div:hover {
   	background-image: radial-gradient(circle, #F7E5D7, #F5BD95, #CF793C);
  }
+
+
