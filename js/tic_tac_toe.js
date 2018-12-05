@@ -76,7 +76,7 @@
 					}
 				}
 			} else {
-				return alert('This box is taken!')
+				alert('This box is taken!')
 			}	
 		}
 	}
