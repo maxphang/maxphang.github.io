@@ -20,6 +20,12 @@
 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style type="text/css">
+      #sample{
+        border: 5px  solid blue;
+        color: white;
+      }
+    </style>
   </head>
 
   <body>
@@ -70,7 +76,7 @@
               <div class="col-8" id="bio-text">
                   <ul>
                       <li>Max Phang</li>
-                      <li>03-05-1995</li>
+                      <li>05-02-1995</li>
                       <li>6010-421 3243</li>
                       <li>Jalan Kuchai Lama</li>
                       <li>jackiephang9535@gmail.com</li>
@@ -186,8 +192,8 @@
       <div class="container-fluid p-0">
         <div class="row">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="../img/portfolio1.PNG">
-              <img class="img-fluid" src="../img/portfolio1.PNG" alt="">
+            <a class="portfolio-box" href="../img/portfolio1.PNG" target="_blank">
+              <img class="img-fluid" src="../img/portfolio1.PNG" alt="Clean Code Web Build">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -201,8 +207,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="../img/portfolio2.PNG">
-              <img class="img-fluid" src="../img/portfolio2.PNG" alt="">
+            <a class="portfolio-box" href="../img/portfolio2.PNG" target="_blank">
+              <img class="img-fluid" src="../img/portfolio2.PNG" alt="Bootstrap Web Build">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -216,15 +222,30 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="../img/1.jpg">
-              <img class="img-fluid" src="../img/1.jpg" alt="">
+            <a class="portfolio-box" href="../img/portfolio3.PNG" target="_blank">
+              <img class="img-fluid" src="../img/portfolio3.PNG" alt="Tic Tac Toe Game Build">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
                     Portfolio 3
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Tic Tac Toe Game Build
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="../img/portfolio4.PNG" target="_blank">
+              <img class="img-fluid" src="../img/portfolio4.PNG" alt="Guess Tag Game">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Portfolio 4
+                  </div>
+                  <div class="project-name">
+                    Guess Tag Game
                   </div>
                 </div>
               </div>
@@ -236,12 +257,11 @@
     <!-- /portfolio section -->
 
     <!-- Bootstrap core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
     <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery.flexslider-min.js"></script>
-    <script>
-      window.alert('Welcome to My Profile!')
-    </script> 
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    
     <script>
       $('.tablinks').click(function(){
         details(event, $(this).attr('title'));
@@ -265,20 +285,8 @@
       // Get the element with id="defaultOpen" and click on it
       document.getElementById("defaultOpen").click();
     </script>
-    <!-- WhatsHelp.io widget -->
-    <script type="text/javascript">
-      (function () {
-        var options = {
-          whatsapp: "+60104213243", // WhatsApp number
-          call_to_action: "Message me", // Call to action
-          position: "right", // Position may be 'right' or 'left'
-          };
-        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-        })();
+    <script>
+      window.alert('Welcome to My Profile!')
     </script>
-    <!-- /WhatsHelp.io widget --> 
   </body>
 </html>
